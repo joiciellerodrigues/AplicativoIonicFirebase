@@ -1,0 +1,7 @@
+{
+  "name": "bioclin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
