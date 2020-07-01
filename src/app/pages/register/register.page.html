@@ -1,0 +1,46 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title> User register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--Body do celular-->
+
+<ion-list>
+  <ion-card>
+    <ion-card-header color="primary">
+      <ion-card-subtitle>Login de Usuário</ion-card-subtitle>
+      <ion-card-title>ou registro</ion-card-title>
+    </ion-card-header> 
+  
+  </ion-card>
+  
+  <ion-card>
+    <ion-item>
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+      <ion-label position="floating">Username:</ion-label>
+      <ion-input type="text" [(ngModel)]="username"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="eye-off-outline" slot="start"></ion-icon>
+      <ion-label position="floating">Password:</ion-label>
+      <ion-input type="text" [(ngModel)]="password"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="eye-off-outline" slot="start"></ion-icon>
+      <ion-label position="floating">Confirm Password:</ion-label>
+      <ion-input type="text" [(ngModel)]="cpassword"> </ion-input>
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-button fill="solid" expand="block" (click)="signUp()"> Sign Up</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-list>
+
+</ion-content>
